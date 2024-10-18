@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <title>Pedra-papel-tesoura</title>
+</head>
+<body>
+  <header>
+    <h1 class="title">Pedra - Papel - Tesoura</h1>
+  </header>
+  <div class="btn-container">  
+    <button id="restart" class="restart-btn">Reiniciar Jogo</button>
+  </div>
+  <div class="score-board">
+    <div id="user-badge" class="badge">user</div>
+    <div id="cpu-badge" class="badge">comp</div>
+    <span id="user-score">0</span>:<span id="cpu-score">0</span>
+  </div>
+  <div class="choices">
+    <div id="rock" class="choice">
+      <img src="images/rock.png" alt="Pedra">
+    </div>
+    <div id="paper" class="choice">
+      <img src="images/paper.png" alt="Papel">
+    </div>
+    <div id="scissors" class="choice">
+      <img src="images/scissors.png" alt="Tesoura">
+    </div>
+  </div>
+  <h2>Faça sua escolha</h2>
+
+  <!-- Modal -->
+  <div class="modal">
+    <div id="result" class="modal-content"></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
